@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppDemo</string>
+    <string name="title_activity_login">MainActivity</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_manager_app">Quản lý ứng dụng</string>
+    <string name="title_fillter">Bộ lọc</string>
+    <string name="title_statistical">Thống kê</string>
+    <string name="title_settings">Cài đặt</string>
+    <string name="title_device_connected">Thiết bị đã kết nối</string>
+    <string name="title_notification">Thông báo</string>
+    <string name="title_account">Tài khoản người dùng</string>
+    <string name="title_block_app">Chặn ứng dụng</string>
+</resources>

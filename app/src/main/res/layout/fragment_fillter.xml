@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fillter.FillterFragment">
+
+    <LinearLayout
+        android:id="@+id/view_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/list_favorite_title"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@drawable/background_rounded_cornner_selected"
+            android:lineHeight="10dp"
+            android:text="Danh sách ưu tiên"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/list_block_title"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@drawable/background_rounded_cornner"
+            android:text="Danh sách cấm"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_favorite"
+        app:layout_constraintTop_toBottomOf="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:src="@drawable/ic_icon_instagram"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="Instagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:src="@drawable/ic_icon_fb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="Facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:src="@drawable/ic_icon_messenger"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="Messenger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_block"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:src="@drawable/ic_icon_skype"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="Skype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:src="@drawable/ic_icon_printest"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="Printest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:src="@drawable/ic_icon_viber"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:text="Viber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

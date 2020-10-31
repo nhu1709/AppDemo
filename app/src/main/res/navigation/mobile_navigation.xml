@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.appdemo.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_management_app"
+        android:name="com.example.appdemo.ui.managementapp.ManagementAppFragment"
+        android:label="@string/title_manager_app"
+        tools:layout="@layout/fragment_mangement_app" />
+
+    <fragment
+        android:id="@+id/navigation_fillter"
+        android:name="com.example.appdemo.ui.fillter.FillterFragment"
+        android:label="@string/title_fillter"
+        tools:layout="@layout/fragment_fillter" />
+
+    <fragment
+        android:id="@+id/navigation_statistical"
+        android:name="com.example.appdemo.ui.statistical.StatisticalFragment"
+        android:label="@string/title_statistical"
+        tools:layout="@layout/fragment_statistical" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.appdemo.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
