@@ -1,6 +1,7 @@
 package com.example.appdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.Group;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,11 +14,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout mLoginByAccountLayout, mLoginByQrLayout;
-    TextView mForgotPassword;
-    Button mLoginByAccount, mLoginByQr, mLogin, mRegister;
+
+    Button  mLogin, mRegister;
     EditText mEmail, mPassword;
-    ImageView mQrImage;
+    TextView textView;
+    Group group;
+    boolean isResgisterSs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,40 +28,35 @@ public class MainActivity extends AppCompatActivity {
 
         initView();
 
-        mLoginByAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mLoginByAccountLayout.setVisibility(View.VISIBLE);
-                mLoginByQrLayout.setVisibility(View.GONE);
-            }
-        });
-        mLoginByQr.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mLoginByAccountLayout.setVisibility(View.GONE);
-                mLoginByQrLayout.setVisibility(View.VISIBLE);
-            }
-        });
 
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(intent);
+                if (validateLogin()){
+                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+        mRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,Register.class));
             }
         });
     }
 
+
+    private boolean validateLogin(){
+        return true;
+    }
+
     private void initView(){
-        mLoginByAccountLayout = findViewById(R.id.login_by_account_layout);
-        mLoginByQrLayout = findViewById(R.id.login_by_qr_layout);
-        mForgotPassword = findViewById(R.id.fogot_password);
-        mLoginByAccount = findViewById(R.id.login_by_account);
-        mLoginByQr = findViewById(R.id.login_by_qr);
+        group = findViewById(R.id.group_register);
+        textView  = findViewById(R.id.title);
         mLogin = findViewById(R.id.login_button);
         mRegister = findViewById(R.id.register_button);
         mEmail = findViewById(R.id.email);
         mPassword = findViewById(R.id.password);
-        mQrImage = findViewById(R.id.qr);
     }
 }

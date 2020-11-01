@@ -29,29 +29,10 @@ public class SettingsFragment extends Fragment {
         mFragmentManager = getActivity().getSupportFragmentManager();
 
         initView(root);
-
         mDeviceConnectedSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getActivity().startActivity(new Intent(getContext(), DeviceConnectedActivity.class));
-            }
-        });
-        mNotificationSetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getActivity().startActivity(new Intent(getContext(), NotificationAcitivity.class));
-            }
-        });
-        mAccountSetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getActivity().startActivity(new Intent(getContext(), AccountAcitivity.class));
-            }
-        });
-        mBlockAppSetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getActivity().startActivity(new Intent(getContext(), BlockAppAcitivity.class));
             }
         });
         mLogout.setOnClickListener(new View.OnClickListener() {
@@ -65,10 +46,10 @@ public class SettingsFragment extends Fragment {
     }
 
     public void initView(View view) {
-        mDeviceConnectedSetting = view.findViewById(R.id.device_connected_setting);
-        mNotificationSetting = view.findViewById(R.id.notification_setting);
-        mAccountSetting = view.findViewById(R.id.account_setting);
-        mBlockAppSetting = view.findViewById(R.id.block_app_setting);
-        mLogout = view.findViewById(R.id.logout);
+        mDeviceConnectedSetting = view.findViewById(R.id.label1);
+//        mNotificationSetting = view.findViewById(R.id.notification_setting);
+//        mAccountSetting = view.findViewById(R.id.account_setting);
+//        mBlockAppSetting = view.findViewById(R.id.block_app_setting);
+        mLogout = view.findViewById(R.id.label3);
     }
 }

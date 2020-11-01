@@ -15,7 +15,7 @@
         android:layout_marginRight="16dp"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="XIN MỜI ĐĂNG NHẬP"
+        android:text="ĐĂNG KÝ TÀI KHOẢN"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -74,54 +74,28 @@
         app:layout_constraintStart_toStartOf="@id/label1"
         app:layout_constraintTop_toBottomOf="@id/label3" />
 
-    <androidx.constraintlayout.widget.Group
-        android:visibility="gone"
-        android:id="@+id/group_register"
-        app:constraint_referenced_ids="edt_usn,label2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
     <Button
         android:id="@+id/login_button"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
         android:background="#0389FF"
-        android:text="Đăng nhập"
-        app:layout_constraintEnd_toStartOf="@+id/vantay"
+        android:text="Đăng kí"
         app:layout_constraintStart_toStartOf="@id/label1"
         app:layout_constraintTop_toBottomOf="@id/password" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/vantay"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="16dp"
-        android:src="@drawable/ic_baseline_fingerprint_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/login_button"
-        app:layout_constraintTop_toTopOf="@+id/login_button" />
-
-    <Button
-        android:id="@+id/register_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="Đăng ký"
-        app:layout_constraintLeft_toLeftOf="@id/login_button"
-        app:layout_constraintRight_toRightOf="@id/vantay"
-        app:layout_constraintTop_toBottomOf="@id/login_button" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Quên mật khẩu ?"
+        android:text="Bạn đã có tài khoản ?"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/register_button" />
+        app:layout_constraintTop_toBottomOf="@id/login_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
