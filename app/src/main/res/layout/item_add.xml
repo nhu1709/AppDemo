@@ -42,10 +42,10 @@
         app:layout_constraintTop_toBottomOf="@+id/title_app" />
 
     <ImageView
+        android:visibility="gone"
         android:id="@+id/checked"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:visibility="gone"
         android:layout_marginRight="5dp"
         android:src="@drawable/ic_icon_tick"
         app:layout_constraintBottom_toBottomOf="@id/img_cancel"
@@ -64,6 +64,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
+        android:visibility="visible"
+        android:id="@+id/block"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

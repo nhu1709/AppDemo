@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -130,6 +131,7 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListV
         ImageView mIconApp;
         ImageView imgCheck , imgCancel;
         TextView mTitleApp, mTimeUsedApp;
+        Switch aSwitchBlock;
 
         public AppListViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -139,6 +141,7 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListV
             mTitleApp = itemView.findViewById(R.id.title_app);
             mTimeUsedApp = itemView.findViewById(R.id.time_used_app);
             mTimeUsedApp = itemView.findViewById(R.id.time_used_app);
+            aSwitchBlock = itemView.findViewById(R.id.block);
         }
 
         public void bindView(model model) {
@@ -146,7 +149,7 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListV
             mTitleApp.setText(model.getTitle());
             mTimeUsedApp.setText(model.getTime());
             imgCheck.setVisibility(model.isCheck() ? View.VISIBLE : View.GONE);
-
+            aSwitchBlock.setChecked(model.isBlock());
         }
     }
 
@@ -162,12 +165,8 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListV
         private String title;
         private String time;
         private boolean check;
+        private boolean block = false;
 
-        public model(int img, String title, String time) {
-            this.img = img;
-            this.title = title;
-            this.time = time;
-        }
     }
 
    public interface onClickdscd {

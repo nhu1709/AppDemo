@@ -29,11 +29,11 @@ public class ThemvaodanhsachActivity extends AppCompatActivity {
     }
 
     private void initValueDSC() {
-        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",false));
-        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_gg_plus,"Facebook","01:09:23",false));
-        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_skype,"Facebook","01:09:23",false));
-        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_instagram,"Facebook","01:09:23",false));
-        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_messenger,"Facebook","01:09:23",false));
-        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",false));
+        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",false,false));
+        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_gg_plus,"Facebook","01:09:23",false,false));
+        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_skype,"Facebook","01:09:23",false,true));
+        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_instagram,"Facebook","01:09:23",false,false));
+        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_messenger,"Facebook","01:09:23",false,false));
+        modelList.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",false,false));
     }
 }

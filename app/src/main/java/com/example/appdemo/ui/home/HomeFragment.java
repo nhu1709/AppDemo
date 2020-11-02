@@ -69,12 +69,12 @@ public class HomeFragment extends Fragment implements interfac {
     }
 
     private void initValueDSC() {
-        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",true));
-        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_gg_plus,"Facebook","01:09:23",true));
-        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_skype,"Facebook","01:09:23",true));
-        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_instagram,"Facebook","01:09:23",true));
-        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_messenger,"Facebook","01:09:23",true));
-        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",true));
+        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",false,false));
+        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_gg_plus,"Facebook","01:09:23",false,false));
+        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_skype,"Facebook","01:09:23",false,true));
+        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_instagram,"Facebook","01:09:23",false,false));
+        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_messenger,"Facebook","01:09:23",false,false));
+        mIconListdsc.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",false,false));
     }
 
     @Override
@@ -95,11 +95,11 @@ public class HomeFragment extends Fragment implements interfac {
     }
 
     private void initValue() {
-        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",false));
-        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_gg_plus,"Facebook","01:09:23",false));
-        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_skype,"Facebook","01:09:23",false));
-        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_instagram,"Facebook","01:09:23",false));
-        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_messenger,"Facebook","01:09:23",false));
-        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",false));
+        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",true,false));
+        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_gg_plus,"Facebook","01:09:23",true,false));
+        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_skype,"Facebook","01:09:23",true,true));
+        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_instagram,"Facebook","01:09:23",true,false));
+        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_messenger,"Facebook","01:09:23",true,false));
+        mIconList.add(new AppListAdapter.model(R.drawable.ic_icon_fb,"Facebook","01:09:23",true,false));
     }
 }
