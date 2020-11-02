@@ -8,235 +8,73 @@
 
     <LinearLayout
         android:id="@+id/view_title"
-        app:layout_constraintTop_toTopOf="parent"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/list_favorite_title"
             android:layout_width="match_parent"
-            android:gravity="center"
-            android:background="@drawable/background_rounded_cornner_selected"
-            android:lineHeight="10dp"
-            android:text="Danh sách ưu tiên"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:background="@drawable/background_rounded_cornner_selected"
+            android:gravity="center"
+            android:lineHeight="10dp"
+            android:text="Danh sách ưu tiên" />
 
         <TextView
             android:id="@+id/list_block_title"
             android:layout_width="match_parent"
-            android:gravity="center"
-            android:background="@drawable/background_rounded_cornner"
-            android:text="Danh sách cấm"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:background="@drawable/background_rounded_cornner"
+            android:gravity="center"
+            android:text="Danh sách cấm" />
 
     </LinearLayout>
 
+
     <LinearLayout
         android:id="@+id/list_favorite"
-        app:layout_constraintTop_toBottomOf="@+id/view_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floating">
 
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rl_favorite"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="80dp">
-
-            <LinearLayout
-                android:layout_width="80dp"
-                android:gravity="center"
-                android:layout_height="80dp">
-
-                <ImageView
-                    android:src="@drawable/ic_icon_instagram"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-                
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="80dp">
-
-                <TextView
-                    android:text="Instagram"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="80dp">
-
-            <LinearLayout
-                android:layout_width="80dp"
-                android:gravity="center"
-                android:layout_height="80dp">
-
-                <ImageView
-                    android:src="@drawable/ic_icon_fb"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="80dp">
-
-                <TextView
-                    android:text="Facebook"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="80dp">
-
-            <LinearLayout
-                android:layout_width="80dp"
-                android:gravity="center"
-                android:layout_height="80dp">
-
-                <ImageView
-                    android:src="@drawable/ic_icon_messenger"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="80dp">
-
-                <TextView
-                    android:text="Messenger"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-        </LinearLayout>
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/list_block"
-        android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@+id/view_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/floating">
 
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rl_block"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="80dp">
+            android:layout_height="match_parent" />
 
-            <LinearLayout
-                android:layout_width="80dp"
-                android:gravity="center"
-                android:layout_height="80dp">
-
-                <ImageView
-                    android:src="@drawable/ic_icon_skype"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="80dp">
-
-                <TextView
-                    android:text="Skype"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="80dp">
-
-            <LinearLayout
-                android:layout_width="80dp"
-                android:gravity="center"
-                android:layout_height="80dp">
-
-                <ImageView
-                    android:src="@drawable/ic_icon_printest"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="80dp">
-
-                <TextView
-                    android:text="Printest"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="80dp">
-
-            <LinearLayout
-                android:layout_width="80dp"
-                android:gravity="center"
-                android:layout_height="80dp">
-
-                <ImageView
-                    android:src="@drawable/ic_icon_viber"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="80dp">
-
-                <TextView
-                    android:text="Viber"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-        </LinearLayout>
 
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_title" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

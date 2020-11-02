@@ -63,7 +63,6 @@ public class HomeFragment extends Fragment implements interfac {
             @Override
             public void onclickRM(AppListAdapter.model model) {
 
-                adtDanhsachcho.notifyDataSetChanged();
             }
         });
         mAdapter.setInterfac(this);

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.managementapp.SettingTimeActivity"></activity>
+        <activity android:name=".ThemvaodanhsachActivity"></activity>
+        <activity android:name=".ui.managementapp.SettingTimeActivity" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
@@ -35,7 +36,6 @@
             android:name=".ui.settings.activity.AccountAcitivity"
             android:label="@string/title_account"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".Register"
             android:label="Đăng ký"

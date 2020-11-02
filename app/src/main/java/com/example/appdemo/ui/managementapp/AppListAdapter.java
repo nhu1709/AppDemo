@@ -99,7 +99,7 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.AppListV
                     if (onClickdscd != null){
                         Toast.makeText(mContext, "Biến khỏi cuộc đời tao", Toast.LENGTH_SHORT).show();
                         list.remove(list.get(i));
-                        onClickdscd.onclickRM(list.get(i));
+                        notifyDataSetChanged();
                     }
                 }
             });
